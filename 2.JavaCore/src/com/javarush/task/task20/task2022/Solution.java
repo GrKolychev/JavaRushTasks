@@ -43,10 +43,10 @@ public class Solution implements Serializable, AutoCloseable {
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("C:/Users/1/Desktop/321.txt"));
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:/Users/1/Desktop/321.txt"));
         Solution solution = new Solution("C:/Users/1/Desktop/123.txt");
-        solution.writeObject("lolkekcheburek");
+        solution.writeObject("4843156");
         oos.writeObject(solution);
 
         Solution solution1 = (Solution) ois.readObject();
-        solution1.writeObject("sosi pisos");
+        solution1.writeObject("788888");
     }
 }
