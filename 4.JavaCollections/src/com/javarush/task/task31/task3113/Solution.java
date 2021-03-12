@@ -30,8 +30,7 @@ public class Solution extends SimpleFileVisitor<Path> {         //extends Simple
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {         //override visitFile method to count amount of files and sizes of files.
         filesCounter++;
-        byte[] b = Files.readAllBytes(file);
-        amountOfBytes += b.length;
+        amountOfBytes += Files.size(file);
         return FileVisitResult.CONTINUE;
     }
 
